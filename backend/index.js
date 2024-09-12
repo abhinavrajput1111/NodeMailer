@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://nodemailer-3.onrender.com",  // Replace with your actual frontend URL
+    origin: "*",  // Replace with your actual frontend URL
     methods: "GET,POST,PUT,DELETE",  // Specify allowed HTTP methods
     credentials: true,  // If you are dealing with cookies or sessions
 }));
