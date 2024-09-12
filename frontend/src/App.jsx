@@ -37,7 +37,7 @@ function App() {
     if (Object.keys(formValidation).length == 0) {
       console.log(name, email, message)
       async function sendRequest(){
-        const response = await axios.post("http://localhost:6006/sendMail", { name, email, message });
+        const response = await axios.post("https://nodemailer-2.onrender.com/sendMail", { name, email, message });
         if (response) {
           setShow(!show);
           alert("Congrats!! Your mail is send")
